@@ -59,7 +59,7 @@
 
   <target name="hafen-client" depends="build-env, extlib/jogl">
     <javac srcdir="src" destdir="build/classes" debug="on"
-	   source="1.8" target="1.8" includeantruntime="no">
+	   source="11" target="11" includeantruntime="no">
       <classpath>
 	<pathelement path="lib/ext/jogl/jogl-all.jar" />
 	<pathelement path="lib/ext/jogl/gluegen-rt.jar" />
@@ -85,7 +85,7 @@
   
   <target name="client-res-java" depends="hafen-client">
     <mkdir dir="resources/classes" />
-    <javac srcdir="resources/java" destdir="resources/classes" debug="on" source="1.8" target="1.8" includeantruntime="no">
+    <javac srcdir="resources/java" destdir="resources/classes" debug="on" source="11" target="11" includeantruntime="no">
       <classpath>
         <pathelement path="build/classes" />
       </classpath>
